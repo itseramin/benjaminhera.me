@@ -35,24 +35,6 @@ const Seo = ({ author, description, image, title, url }) => {
 			<meta property="og:description" content={seo.description} />
 			<meta property="og:image" content={seo.image} />
 			<meta property="og:site_name" content="Apartment Mehes" />
-
-			<link
-				rel='apple-touch-icon" sizes="180x180'
-				href="media/images/favicon/apple-touch-icon.png"
-			/>
-			<link
-				rel="icon"
-				type="image/png"
-				sizes="16x16"
-				href="media/images/favicon/favicon-16x16.png"
-			/>
-			<link
-				rel="icon"
-				type="image/png"
-				sizes="32x32"
-				href="media/images/favicon/favicon-32x32.png"
-			/>
-			<link rel="manifest" href="media/images/favicon/site.webmanifest" />
 		</Helmet>
 	)
 }

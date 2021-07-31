@@ -7,6 +7,19 @@ module.exports = {
     siteUrl: `https://www.benjaminhera.me`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        background_color: `#f7f0eb`,
+        display: `standalone`,
+        icon: `static/media/images/favicon.png`,
+        lang: `en`,
+        name: `Benjamin Hera`,
+        short_name: `CV`,
+        start_url: `/`,
+        theme_color: `#a2466c`
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-styled-components`
