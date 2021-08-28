@@ -1,7 +1,7 @@
 {
   "name": "benjaminhera.me",
   "private": true,
-  "description": "Personal website for my portfolio/CV",
+  "description": "Benjamin George Hera's website!",
   "version": "0.0.1",
   "license": "0BSD",
   "scripts": {
@@ -15,21 +15,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@react-icons/all-files": "^4.1.0",
-    "@react-three/drei": "^7.3.1",
+    "@reach/router": "^1.3.4",
+    "@react-three/drei": "^7.5.0",
     "@react-three/fiber": "^7.0.6",
-    "bootstrap": "^5.0.2",
-    "gatsby": "^3.10.2",
-    "gatsby-plugin-manifest": "^3.10.0",
-    "gatsby-plugin-react-helmet": "^4.10.0",
-    "gatsby-plugin-smoothscroll": "^1.2.0",
-    "gatsby-plugin-styled-components": "^4.10.0",
+    "@react-three/postprocessing": "^2.0.5",
+    "bootstrap": "^5.1.0",
+    "gatsby": "^3.12.1",
+    "gatsby-plugin-manifest": "^3.12.0",
+    "gatsby-plugin-react-helmet": "^4.12.0",
+    "gatsby-plugin-styled-components": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "react-bootstrap": "^1.6.1",
+    "react-bootstrap": "^2.0.0-beta.6",
     "react-dom": "^17.0.2",
-    "react-icons": "^4.2.0",
-    "styled-icons": "^10.37.0",
-    "three": "^0.130.1"
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.1",
+    "styled-components": "^5.3.1",
+    "three": "^0.132.2"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",

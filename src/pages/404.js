@@ -1,33 +1,27 @@
-import React, { useRef } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import styled from 'styled-components'
-import Text from '../components/threejs/text'
+import React, { Suspense } from "react"
+import { Stage } from "@react-three/drei"
+import { Canvas } from "@react-three/fiber"
+import styled from "styled-components"
 
-import Layout from '../layouts/main'
+import Layout from "../layouts/main"
 
-function FoF() {
-  const ref = useRef()
-  useFrame(({ clock }) => (ref.current.rotation.y = clock.getElapsedTime()))
-
-  return (
-    <group ref={ref}>
-      <Text text='404' position={[0, 0, -10]} size={12} />
-    </group>
-  )
-}
+import Loader from "../components/threejs/Loader"
+import FoF from "../components/threejs/404"
 
 export default function FourOFour() {
   return (
     <Layout>
       <ThreeJs>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} />
-        <FoF />
+        <Suspense fallback={<Loader />}>
+          <Stage preset="rembrandt" intensity={1} environment="city">
+            <FoF />
+          </Stage>
+        </Suspense>
       </ThreeJs>
     </Layout>
   )
 }
 
 const ThreeJs = styled(props => <Canvas {...props} />).attrs({
-  className: 'position-fixed top-0 start-0'
+  className: "position-fixed top-0 start-0",
 })``

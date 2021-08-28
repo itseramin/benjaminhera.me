@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    author: `Benjamin Hera`,
-    description: `Personal website for CV and for flexing w my non-existing front-end skills`,
-    image: `/static/images/seo/img.png`,
-    title: `Benjamin Hera`,
-    siteUrl: `https://www.benjaminhera.me`
+    author: `Benjamin George Hera`,
+    description: `Benjamin George Hera here! Testing out the Three.js library in React with React Three Fiber. Kinda cool, come back for something even cooler 😎`,
+    image: `/static/images/seo/img.jpg`,
+    title: `Benjamin Hera - professional retard and dev`,
+    siteUrl: `https://www.benjaminhera.me`,
   },
   plugins: [
     {
@@ -12,16 +12,15 @@ module.exports = {
       options: {
         background_color: `#f7f0eb`,
         display: `standalone`,
-        icon: `static/media/images/favicon.png`,
+        icon: `static/media/images/misc/favicon.jpg`,
         lang: `en`,
         name: `Benjamin Hera`,
         short_name: `CV`,
         start_url: `/`,
-        theme_color: `#a2466c`
-      }
+        theme_color: `#a2466c`,
+      },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-smoothscroll`,
-    `gatsby-plugin-styled-components`
-  ]
+    `gatsby-plugin-styled-components`,
+  ],
 }
